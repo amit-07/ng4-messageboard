@@ -2,7 +2,7 @@ import { Component} from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
-  moduleId: module.id,  
+  moduleId: module.id,
   selector: 'register',
   templateUrl: 'register.component.html',
   styles: [`

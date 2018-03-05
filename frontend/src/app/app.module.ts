@@ -14,18 +14,20 @@ import { NavComponent } from './navbar.component';
 import { HomeComponent } from './home.component';
 import { RegisterComponent } from './register.component';
 
-var routes = [
-              {path: '',component: HomeComponent},
-              {path: 'messages',component: MessagesComponent},
-              {path: 'messages/:name',component: MessagesComponent},
-              {path: 'register',component: RegisterComponent}
+const routes = [
+              {path: '', component: HomeComponent},
+              {path: 'messages', component: MessagesComponent},
+              {path: 'messages/:name', component: MessagesComponent},
+              {path: 'register', component: RegisterComponent}
              ];
 
 @NgModule({
   declarations: [
     AppComponent, MessagesComponent, NewMessageComponent, NavComponent, HomeComponent, RegisterComponent],
   imports: [
-    BrowserModule, RouterModule.forRoot(routes), BrowserAnimationsModule, MatToolbarModule, MatButtonModule, MatCardModule, MatSnackBarModule, HttpModule, MatInputModule, MatFormFieldModule, FormsModule, ReactiveFormsModule
+    BrowserModule, RouterModule.forRoot(routes), BrowserAnimationsModule, 
+    MatToolbarModule, MatButtonModule, MatCardModule, MatSnackBarModule, HttpModule,
+    MatInputModule, MatFormFieldModule, FormsModule, ReactiveFormsModule
   ],
   providers: [WebService],
   bootstrap: [AppComponent]
